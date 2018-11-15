@@ -1,0 +1,12 @@
+{
+    "gui": {
+        "width": 10
+    },
+    "time": {
+        "fps": 20
+    },
+    "mine": {
+        "rate": 1.0,
+        "threshold": 5
+    }
+}
