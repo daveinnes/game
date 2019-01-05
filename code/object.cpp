@@ -1,18 +1,40 @@
 #include "object.h"
+
+#include <cmath>
+
 #include "world.h"
 #include "render.h"
 #include "input.h"
+#include "assert.h"
+#include "player.h"
 
-Object::Object(Vector2 pos, char c) 
+Object::Object(const Vector2& pos, const Vector2& dimensions, char c) 
 : mPos(pos)
-, mChar(c) {
+, mDimensions(dimensions)
+, mChar(c)
+, mPlayer(nullptr) 
+, mSide(0)
+, mColour(COLOR_WHITE) {
+    ASSERT(mDimensions.x > 0);
+    ASSERT(mDimensions.y > 0);
+}
+
+void Object::update() {
 
 }
 
-void Object::update(World* world, Input* input) {
-
+void Object::render(Render* render) {
+    render->put(mPos.x, mPos.y, mChar, mColour);
 }
 
-void Object::render(Render* r) {
-    r->put(mPos.x, mPos.y, mChar);
+bool Object::hitTest(int x, int y) {
+    bool hit =  x >= std::floor(mPos.x)
+                && x < (std::floor(mPos.x) + mDimensions.x)
+                && y >= std::floor(mPos.y)
+                && y < (std::floor(mPos.y) + mDimensions.y);
+    return hit;
+}
+
+int Object::side() {
+    return mPlayer->side();
 }

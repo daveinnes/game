@@ -1,25 +1,45 @@
 #ifndef _PLAYER_H_
 #define _PLAYER_H_
 
-struct Bank {
-    Bank() : money(0), research(0) {}
-    int money;
-    int research;
-};
+#include <vector>
+
+#include "game.h"
+
+class Base;
+class Resource;
+class PlayerBehavior;
+
+namespace Json {
+    class Value;
+}
 
 class Player
 {
 public:
-    Player();
+    Player(const Json::Value& tuning, int side);
     ~Player();
 
+    void processInput();
+    Resource* bank() { return mBank; }
+    Base* base(int index) { return mBases[index]; }
+    Base* selectedBase() { return mBases[mSelectedBaseIndex]; }
+    void add(Base* base) { mBases.push_back(base); }
     void update();
-    void buildMine();
-    
-    Bank* bank() { return &mBank; }
+    void selectBase(int index);
+    int side() { return mSide; }
+
+    int& usedSupply() { return mUsedSupply; }
+    int& supply() { return mSupply; }
+    int availableSupply() { return mSupply - mUsedSupply; }
 
 private:
 
-    Bank mBank;
+    std::vector<Base*> mBases;
+    Resource* mBank;
+    PlayerBehavior* mBehavior;
+    int mSelectedBaseIndex;
+    int mSide;
+    int mUsedSupply;
+    int mSupply;
 };
 #endif

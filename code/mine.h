@@ -1,23 +1,25 @@
-#ifndef _MINERAL_PATCH_H_
-#define _MINERAL_PATCH_H_
+#ifndef _MINE_H_
+#define _MINE_H_
 
-#include "object.h"
+#include "gatherer.h"
 
-class Mine : public Object {
+class Mine : public Gatherer
+{
 public:
+    static const int kType = 'mine';
     static const char kChar = '.';
-    Mine(Vector2 pos);
 
-    virtual void build();
-    virtual void update();
-private:
+    Mine(const Vector2& pos, const Vector2& dimensions, const Json::Value& tuning);
+    ~Mine() {};
 
-    void startMining();
+    //Gatherer
+    void deposit(Resource* bank, int amount) override;
+    char getBuiltChar() override;
 
-    bool mMining;
-    float mMiningStartTime;
-    float mCollectionRate;
-    int mDepositThreshold;
+    //Object
+    bool implementsType(int type) override { return type == kType || Gatherer::implementsType(type); }
+    int getType() override { return kType; }
+
 };
 
 #endif

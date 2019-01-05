@@ -7,7 +7,7 @@
 class Gui
 {
 public:
-    Gui(int x, int y, int width, int height);
+    Gui(int x, int y, int width, int height, int playerCount);
     ~Gui();
     void draw();
 
@@ -16,5 +16,6 @@ private:
     int mWidth;
     int mHeight;
     Vector2 mPos;
+    int mPlayerCount;
 };
 #endif

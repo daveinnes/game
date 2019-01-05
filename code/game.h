@@ -1,6 +1,8 @@
 #ifndef _GAME_H_
 #define _GAME_H_
 
+#include <vector>
+
 class World;
 class Input;
 class Render;
@@ -17,12 +19,16 @@ public:
     static void destroy();
 
     void init();
+    void free();
+    void reload();
     void run();
+    void processInput();
 
     World* world() { return mWorld; }
     Input* input() { return mInput; }
     Render* render() { return mRender; }
-    Player* player() { return mPlayer; }
+    Player* selectedPlayer() { return mSelectedPlayer; }
+    Player* player(int index) { return mPlayers[index]; }
     Gui* gui() { return mGui; }
     Tuning* tuning() { return mTuning; }
     Time* time() { return mTime; }
@@ -35,9 +41,13 @@ private:
     World* mWorld;
     Input* mInput;
     Render* mRender;
-    Player* mPlayer;
+    std::vector<Player*> mPlayers;
     Gui* mGui;
     Tuning* mTuning;
     Time* mTime;
+    int mTuningIndex;
+
+    bool mRunning;
+    Player* mSelectedPlayer;
 };
 #endif

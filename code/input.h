@@ -6,10 +6,10 @@ public:
     Input();
 
     void read();
-    char get();
+    int get();
     
 private:
-    char mInputChar;
+    int mInputValue;
 };
 
 #endif

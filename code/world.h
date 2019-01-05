@@ -2,38 +2,33 @@
 #define _WORLD_H_
 
 #include <vector>
-#include <string>
 
-class Object;
+#include "scene.h"
+
 class Render;
-class Input;
 
-class World {
+namespace Json {
+    class Value;
+}
+
+class World : public Scene {
 public:
-    World();
+    World(const Json::Value& tuning);
+    virtual ~World();
 
-    void init(const std::string& mapText);
-    void add(Object* object);
-    void update(Input* input);
-    void render(Render* render);
-    
-    int getWidth() { return mWidth; }
-    int getHeight() { return mHeight; }
+    bool isInBounds(const Vector2& pos);
+    void update() override;
+    void render(Render* render) override;
 
-    template <class T>
-    T* find() {
-        for(Object* o : mObjects) {
-            if(o->is<T>())
-                return static_cast<T*>(o);
-            }
-        }
-        return nullptr;
-    }
+    //Scene
+    bool remove(Object* obj) override;
+    Object* at(const Vector2& pos) override;
+    Object* at(int x, int y) override;
 
 private:
-    std::vector<Object*> mObjects;
-    int mWidth;
-    int mHeight;
+    void initBases(const Json::Value& tuning);
+
+    std::vector<Scene*> mScenes;
 };
 
 #endif

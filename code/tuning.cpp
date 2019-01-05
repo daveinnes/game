@@ -1,12 +1,13 @@
 #include "tuning.h"
 #include <fstream>
 
-Tuning::Tuning() {
+Tuning::Tuning()
+: mData(nullptr) {
 
 }
 
 Tuning::~Tuning() {
-
+    delete mData;
 }
 
 void Tuning::load(const char* path) {

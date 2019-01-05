@@ -1,21 +1,24 @@
 {
     "game": {
         "playerCount": 2,
-        "fps": 20.0
+        "fps": 20
     },
     "gui": {
         "width": 10
     },
     "player": {
-        "bank": [ 200, 0 ]
+        "bank": [ 200, 0 ],
+        "behavior": {
+            "period": 2
+        }
     },
     "world": {
         "bases": {
-            "path": "../data/base.txt",
-            "count": 3,
-            "spacing": [10, 24],
+            "path": "../data/base2.txt",
+            "count": 7,
+            "spacing": [5, 30],
             "margin": 10,
-            "startingWorkers": 10
+            "startingWorkers": 2
         }
     },
     "render": {
@@ -27,16 +30,16 @@
         "buildTime": 2,
         "health": 50,
         "speed": 4.0,
-        "damage": 4,
+        "damage": 10,
         "attackPeriod": 0.5,
         "hitTime": 0.2
     },
     "mine": {
-        "rate": 1.0,
+        "rate": 3.0,
         "threshold": 5,
         "cost": [ 50, 0],
         "supplyCost": 1,
-        "buildTime": 2,
+        "buildTime": 5,
         "health": 100
     },
     "lab": {
@@ -50,20 +53,20 @@
     "barracks": {
         "cost": [ 150, 0],
         "supplyCost": 0,
-        "buildTime": 2,
+        "buildTime": 5,
         "health": 100
     },
     "nexus" : {
         "cost": [ 400, 0],
         "supplyCost": 0,
-        "buildTime": 2,
+        "buildTime": 20,
         "supply": 15,
         "health": 100
     },
     "pylon" : {
         "cost": [ 100, 0],
         "supplyCost": 0,
-        "buildTime": 2,
+        "buildTime": 5,
         "supplyPerNode": 10,
         "health": 100
     }

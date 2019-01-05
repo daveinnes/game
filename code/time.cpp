@@ -6,7 +6,7 @@ Time::Time()
 : mStartTime(0)
 , mFrameStartTime(0)
 , mDeltaTime(0) {
-    mFps = Game::get()->tuning()->get("time")["fps"].asFloat();
+    mFps = Game::get()->tuning()->get("game")["fps"].asFloat();
     mInvFps = ((float) 1) / mFps;
 }
 

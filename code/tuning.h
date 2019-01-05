@@ -11,7 +11,6 @@ public:
 
     void load(const char* path);
     const Json::Value& get(const char* name);
-
 private:
     Json::Value* mData;
 };

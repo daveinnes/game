@@ -6,25 +6,46 @@
 class World;
 class Render;
 class Input;
+class Player;
 
 class Object {
 public:
-    Object(Vector2 pos, char c);
-
-    void update(World* world, Input* input);
-    void render(Render* render);
-    Vector2& getPos() { return mPos; }
+    Object(const Vector2& pos, const Vector2& dimensions, char c);
+    virtual ~Object() {}
     
-    void build() {}
+    virtual void update();
+    virtual void render(Render* render);
+    virtual bool implementsType(int type) = 0;
+    virtual int getType() = 0;
     
     template<class T> 
     bool is() {
-        return mChar == T::kChar;
+        return implementsType(T::kType);
     }
 
+    template<class T> 
+    T* as() {
+        if(implementsType(T::kType)) {
+            return static_cast<T*>(this);
+        }
+        return nullptr;
+    }
+
+    bool hitTest(int x, int y);
+    Vector2& pos() { return mPos; }
+    Vector2& dim() { return mDimensions; }
+    char renderChar() { return mChar; }
+    char& colour() { return mColour; }
+    Player*& player() { return mPlayer; }
+    int side();
+    
 protected:
+    char mColour;
     char mChar;
     Vector2 mPos;
+    Vector2 mDimensions;
+    Player* mPlayer;
+    int mSide;
 
 private:
 };

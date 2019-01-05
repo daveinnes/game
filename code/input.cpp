@@ -1,14 +1,14 @@
 #include "input.h"
 #include <ncurses.h>
 
-Input::Input() {
-    mInputChar = -1;
+Input::Input()
+: mInputValue(0) {
 }
 
 void Input::read() {
-    mInputChar = getch();
+    mInputValue = getch();
 }
 
-char Input::get() {
-    return mInputChar;
+int Input::get() {
+    return mInputValue;
 }
