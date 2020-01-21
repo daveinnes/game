@@ -5,18 +5,22 @@
 #include "world.h"
 #include "player.h"
 #include "object.h"
+#include "pathfinding.h"
+#include "waypoint.h"
 
 UnitBehavior::UnitBehavior(Unit* unit)
-: mUnit(unit) {
+: mUnit(unit)
+, mWaypoint(nullptr) {
     mStartingX = mUnit->mPos.xInt();
 }
 
 void UnitBehavior::update() {
-    Unit* target = pickTarget();
-    if(target != nullptr) {
-        mUnit->attack(target);
-    } else {
-        move();
+//    Unit* target = pickTarget();
+//    if(target != nullptr) {
+//        mUnit->attack(target);
+//    } else 
+    {
+        updatePathfinding();
     }
 }
 
@@ -31,7 +35,7 @@ Unit* UnitBehavior::pickTarget() {
 
     Unit* target = nullptr;
     for(int i = 0; i < 3; ++i) {
-        Object* objAt = mAdjacentObjects[i] = world->at(mAdjacentPos[i]);
+        Object* objAt = mAttackableObjects[i] = world->at(mAdjacentPos[i]);
         if(objAt != nullptr) {
             Unit* potentialTarget = objAt->as<Unit>();
             if(potentialTarget != nullptr 
@@ -46,17 +50,56 @@ Unit* UnitBehavior::pickTarget() {
     return target;
 }
 
+void UnitBehavior::updatePathfinding() {
+    if(mWaypoint == nullptr) {
+        findNextWaypoint();
+    }
+    std::vector<Waypoint*> adjacentWaypoints = Game::get()->world()->adjacent<Waypoint>(mUnit);
+    for(Waypoint* w : adjacentWaypoints) {
+        if(w == mWaypoint) {
+            mWaypoint->collect();
+            findNextWaypoint();
+        }
+    }
+    moveTo(mWaypoint->pos());
+}
+
+void UnitBehavior::findNextWaypoint() {
+    int minId = 10;
+    std::vector<Waypoint*> waypoints = Game::get()->world()->findAll<Waypoint>();
+    for(Waypoint* w : waypoints) {
+        if(w->id() < minId) {
+            mWaypoint = w;
+            minId = w->id();
+        }
+    }
+}
+
+void UnitBehavior::moveTo(const Vector2& pos) {
+    Pathfinding pathfinding;
+    const Path& path = pathfinding.findPath(mUnit->pos(), pos);
+    const Vector2& direction = path.steps[0] - mUnit->pos();
+    moveDirection(direction);
+}
+
+void UnitBehavior::moveDirection(const Vector2& direction) {
+    World* world = Game::get()->world();
+    Vector2 targetPos = mUnit->mPos + direction;
+    if(world->at(targetPos) == nullptr && world->isInBounds(targetPos)) {
+        float deltaTime = Game::get()->time()->delta();
+        mUnit->mPos += direction * mUnit->mSpeed * deltaTime;
+    }
+}
 
 void UnitBehavior::move() {
-    float deltaTime = Game::get()->time()->delta();
     Vector2 direction;
-    if(mAdjacentObjects[1] == nullptr) {
+    if(mAttackableObjects[1] == nullptr) {
         direction.y += mUnit->side();
     } else {
-        if(mAdjacentObjects[0] == nullptr && mAdjacentPos[0].xInt() >= mStartingX - 1) {
+        if(mAttackableObjects[0] == nullptr && mAdjacentPos[0].xInt() >= mStartingX - 1) {
             direction.x -= 1;
         } else {
-            if(mAdjacentObjects[2] == nullptr && mAdjacentPos[2].xInt() <= mStartingX + 1) {
+            if(mAttackableObjects[2] == nullptr && mAdjacentPos[2].xInt() <= mStartingX + 1) {
                 direction.x += 1;
             } else {
                 if(mUnit->pos().xInt() > mStartingX) {
@@ -68,9 +111,5 @@ void UnitBehavior::move() {
         }
     }
 
-    World* world = Game::get()->world();
-    Vector2 targetPos = mUnit->mPos + direction;
-    if(world->at(targetPos) == nullptr && world->isInBounds(targetPos)) {
-        mUnit->mPos += direction * mUnit->mSpeed * deltaTime;
-    }
+    moveDirection(direction);
 }

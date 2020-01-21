@@ -55,6 +55,9 @@ buildObject pylon
 buildObject multibuilding
 buildObject unitbehavior
 buildObject playerbehavior
+buildObject wall
+buildObject waypoint
+buildObject pathfinding
 
 popd > /dev/null
 
@@ -92,5 +95,8 @@ g++ -g \
     $G_DIR/bin/obj/multibuilding.o \
     $G_DIR/bin/obj/unitbehavior.o \
     $G_DIR/bin/obj/playerbehavior.o \
+    $G_DIR/bin/obj/wall.o \
+    $G_DIR/bin/obj/waypoint.o \
+    $G_DIR/bin/obj/pathfinding.o \
 
 echo Done!

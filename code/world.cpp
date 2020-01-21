@@ -13,7 +13,11 @@
 #include "pylon.h"
 
 World::World(const Json::Value& tuning) {
-    initBases(tuning["bases"]);
+    if(tuning.isMember("bases")) {
+        initBases(tuning["bases"]);
+    } else if(tuning.isMember("map")) {
+        initMap(tuning["map"]);
+    }
 }
 
 World::~World() {
@@ -96,6 +100,11 @@ void World::initBases(const Json::Value& tuning) {
         mWidth = x + 1;
         mHeight = y + 1;
     }
+}
+
+void World::initMap(const Json::Value& tuning) {
+    TextMatrix map(tuning.asCString());
+    init(map);
 }
 
 Object* World::at(const Vector2& pos) {

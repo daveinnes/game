@@ -57,3 +57,10 @@ void Player::selectBase(int index) {
         mSelectedBaseIndex = index;
     }
 }
+
+Base* Player::selectedBase() {
+    if(mSelectedBaseIndex > -1 && mSelectedBaseIndex < mBases.size()) {
+        return mBases[mSelectedBaseIndex];
+    }
+    return nullptr;
+}

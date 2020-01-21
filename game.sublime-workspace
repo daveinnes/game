@@ -1,0 +1,3118 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"en",
+				"end"
+			],
+			[
+				"adja",
+				"adjacentWaypoints"
+			],
+			[
+				"move",
+				"moveTo"
+			],
+			[
+				"mWAy",
+				"mWaypoint"
+			],
+			[
+				"of",
+				"offset"
+			],
+			[
+				"PAth",
+				"Pathfinding"
+			],
+			[
+				"Path",
+				"pathfinding"
+			],
+			[
+				"waypoin",
+				"waypointId"
+			],
+			[
+				"new",
+				"newObject"
+			],
+			[
+				"as",
+				"asCString"
+			],
+			[
+				"mS",
+				"mSelectedBaseIndex"
+			],
+			[
+				"can",
+				"canBuild"
+			],
+			[
+				"canB",
+				"canBuildUnit"
+			],
+			[
+				"Player",
+				"PlayerBehavior"
+			],
+			[
+				"begin",
+				"beginFrame"
+			],
+			[
+				"tun",
+				"tuningFilePath"
+			],
+			[
+				"mTu",
+				"mTuningIndex"
+			],
+			[
+				"render",
+				"renderBuidling"
+			],
+			[
+				"mB",
+				"mBehavior"
+			],
+			[
+				"update",
+				"updateDamage"
+			],
+			[
+				"rend",
+				"renderChar"
+			],
+			[
+				"mHE",
+				"mHealthPerSection"
+			],
+			[
+				"mSp",
+				"mSpawned"
+			],
+			[
+				"target",
+				"targetPos"
+			],
+			[
+				"mAd",
+				"mAdjacentPos"
+			],
+			[
+				"obj",
+				"objAt"
+			],
+			[
+				"mad",
+				"mAdjacentPos"
+			],
+			[
+				"mAdj",
+				"mAdjacentObject"
+			],
+			[
+				"at",
+				"attack"
+			],
+			[
+				"Unit",
+				"UnitBehavior"
+			],
+			[
+				"startBu",
+				"startBuildNoCost"
+			],
+			[
+				"mBuil",
+				"mBuilding"
+			],
+			[
+				"buil",
+				"buildingCount"
+			],
+			[
+				"mBl",
+				"mBlinkTime"
+			],
+			[
+				"unit",
+				"unitToSpawn"
+			],
+			[
+				"mBu",
+				"mBuildStartTime"
+			],
+			[
+				"mPen",
+				"mPendingUnit"
+			],
+			[
+				"supp",
+				"supplyStr"
+			],
+			[
+				"mSup",
+				"mSupplyPerNode"
+			],
+			[
+				"mAtt",
+				"mAttackTime"
+			],
+			[
+				"delt",
+				"deltaTime"
+			],
+			[
+				"pla",
+				"Player"
+			],
+			[
+				"play",
+				"playerIndex"
+			],
+			[
+				"player",
+				"player"
+			],
+			[
+				"col",
+				"colour"
+			],
+			[
+				"colou",
+				"colourAt"
+			],
+			[
+				"sel",
+				"selectedIndex"
+			],
+			[
+				"m",
+				"mSelectedBaseIndex"
+			],
+			[
+				"base",
+				"baseSpacing"
+			],
+			[
+				"ba",
+				"baseCount"
+			],
+			[
+				"prod",
+				"production"
+			],
+			[
+				"pro",
+				"production"
+			],
+			[
+				"bank",
+				"bankTuning"
+			],
+			[
+				"build",
+				"Buildable"
+			],
+			[
+				"x",
+				"x"
+			],
+			[
+				"CodE",
+				"CODE_FILE"
+			],
+			[
+				"cl",
+				"clock_t"
+			],
+			[
+				"SCREEN_",
+				"SCREEN_HEIGHT"
+			],
+			[
+				"push",
+				"push_back\tfunc"
+			],
+			[
+				"beg",
+				"beginend\t$1.begin(), $1.end()"
+			],
+			[
+				"PRO",
+				"PROBLEM_NAME"
+			],
+			[
+				"P",
+				"PROBLEM_NAME"
+			],
+			[
+				"res",
+				"resize\tfunc"
+			],
+			[
+				"uni",
+				"unique\tfunc"
+			],
+			[
+				"rank",
+				"rankSet"
+			],
+			[
+				"getr",
+				"getRanks"
+			],
+			[
+				"sco",
+				"scores"
+			],
+			[
+				"score",
+				"scores_temp"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "code/pathfinding.h",
+			"settings":
+			{
+				"buffer_size": 1255,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/assert.h",
+			"settings":
+			{
+				"buffer_size": 560,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/vector.h",
+			"settings":
+			{
+				"buffer_size": 1206,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 78 files for \"length\"\n\n/home/daveinnes/game/bin/game:\n    <binary>\n\n/home/daveinnes/game/code/pathfinding.h:\n   23      int distance() {\n   24          int d = 0;\n   25:         for(int i = 0; i < steps.length)\n   26      }\n   27  \n\n15 matches across 2 files\n\n\nSearching 78 files for \"for\"\n\n/home/daveinnes/game/bin/game:\n    <binary>\n\n/home/daveinnes/game/code/base.cpp:\n   16      mPos = pos;\n   17      init(map);\n   18:     for(Object* o : mObjects) {\n   19          o->player() = player;\n   20      }\n   ..\n   26  void Base::select(bool selected) {\n   27      mSelected = selected;\n   28:     for(Object* obj : mObjects) {\n   29          char& color = obj->colour();\n   30          color = selected ? COLOR_GREEN : COLOR_WHITE;\n   ..\n   75                  std::vector<Production*> productions =  findAll<Production>();\n   76                  Production* leastQueued = nullptr;\n   77:                 for(Production* production : productions) {\n   78                      if(production->isBuilt()) {\n   79                          if(leastQueued == nullptr || production->queueSize() < leastQueued->queueSize()) {\n\n/home/daveinnes/game/code/base.h:\n   21      T* build() {\n   22          std::vector<T*> objs = findAll<T>();\n   23:         for(T* obj : objs) {\n   24              if(obj->canBuild()) {\n   25                  obj->startBuild();\n   ..\n   33      T* place() {\n   34          std::vector<T*> objs = findAll<T>();\n   35:         for(T* obj : objs) {\n   36              obj->finishBuild();\n   37              return obj;\n\n/home/daveinnes/game/code/building.cpp:\n   46              render->fillBlinkAt(mPos.x, mPos.y, mDimensions.x, mDimensions.y, mBuilding);\n   47          }\n   48:         for(int x = 0; x < mDimensions.x; ++x) {\n   49:             for(int y = 0; y < mDimensions.y; ++y) {\n   50                  int index = y * mDimensions.x + x;\n   51                  if(index < mSectionsAlive) {\n\n/home/daveinnes/game/code/game.cpp:\n   44  \n   45  void Game::free() {\n   46:     for(Player* player : mPlayers) {\n   47          delete player;\n   48      }\n   ..\n   74  \n   75      int playerCount = mTuning->get(\"game\")[\"playerCount\"].asInt();\n   76:     for(int i = 0; i < playerCount; ++i) {\n   77          int side = i == 0 ? 1 : -1;\n   78          Player* p = new Player(mTuning->get(\"player\"), side);\n   ..\n  103          mInput->read();\n  104          processInput();\n  105:         for(Player* player : mPlayers) {\n  106              player->update();\n  107          }\n\n/home/daveinnes/game/code/gui.cpp:\n   28      int x = margin;\n   29      int y = margin;\n   30:     for(int i = 0; i < mPlayerCount; ++i) {\n   31          Player* player = Game::get()->player(i);\n   32  \n   ..\n   36  \n   37          Resource* bank = player->bank();\n   38:         std::string playerStr = String::format(\"Player %:\", i + 1);\n   39          mvwaddstr(mWin, y, x, playerStr.c_str());\n   40          y += spacing;\n   41  \n   42:         std::string moneyStr = String::format(\"$: %\", bank->money);\n   43          mvwaddstr(mWin, y, x, moneyStr.c_str());\n   44          y += spacing;\n   45  \n   46:         std::string researchStr = String::format(\"#: %\", bank->research);\n   47          mvwaddstr(mWin, y, x, researchStr.c_str());\n   48          y += spacing;\n   49  \n   50:         std::string supplyStr = String::format(\"@: %/%\", player->usedSupply(), player->supply());\n   51          mvwaddstr(mWin, y, x, supplyStr.c_str());\n   52          y += spacing;\n\n/home/daveinnes/game/code/multibuilding.cpp:\n   49      int buildingCount = mQueuedCount;\n   50      int left = mNodeCount;\n   51:     for(int y = 0; y < mDimensions.y; ++y) {\n   52:         for(int x = 0; x < mDimensions.x; ++x) {\n   53              int index = y * mDimensions.x + x;\n   54              if(index < mSectionsAlive) {\n\n/home/daveinnes/game/code/pathfinding.cpp:\n   24      while(!frontier.empty()) {\n   25          Path path = frontier.pop();\n   26:         for(int i = 0; i < 4; ++i) {\n   27              Vector2 offset = offsets[i];\n   28              Path newPath = getPath(path, offset);\n\n/home/daveinnes/game/code/pathfinding.h:\n   11  \n   12      Path(const Path& rhs) {\n   13:         for(const Vector2& step : steps) {\n   14              this.steps.push(step);\n   15          }\n   ..\n   23      int distance() {\n   24          int d = 0;\n   25:         for(int i = 0; i < steps.length)\n   26      }\n   27  \n\n/home/daveinnes/game/code/player.cpp:\n   44      }\n   45  \n   46:     for(Base* base : mBases) {\n   47          base->processInput();\n   48      }\n\n/home/daveinnes/game/code/production.cpp:\n   19  Production::~Production() {\n   20      delete mPendingUnit;\n   21:     for(Unit* unit : mUnits) {\n   22          delete unit;\n   23      }\n   ..\n   93      if(mBuilt) {\n   94          int buildingCount = mUnits.size();\n   95:         for(int y = 0; y < mDimensions.y; ++y) {\n   96:             for(int x = 0; x < mDimensions.x; ++x) {\n   97                  int index = y * mDimensions.x + x;\n   98                  bool renderChar = false;\n\n/home/daveinnes/game/code/render.cpp:\n   34  \n   35  void Render::fill(int x, int y, int width, int height, char c, char colour) {\n   36:     for(int xx = 0; xx < width; ++xx) {\n   37:         for(int yy = 0; yy < height; ++yy) {\n   38              put(x+xx, y+yy, c, colour);\n   39          }\n   ..\n   42  \n   43  void Render::fillBlinkAt(int x, int y, int width, int height, bool blink) {\n   44:     for(int xx = 0; xx < width; ++xx) {\n   45:         for(int yy = 0; yy < height; ++yy) {\n   46              blinkAt(x+xx, y+yy) = blink;\n   47          }\n   ..\n   80      }\n   81  \n   82:     for(int y = 0; y < mHeight; ++y) {\n   83:         for(int x = 0; x < mWidth; ++x) {\n   84              char& c = at(x, y);\n   85              bool& b = blinkAt(x, y);\n\n/home/daveinnes/game/code/scene.cpp:\n   29  \n   30  Scene::~Scene() {\n   31:     for(Object* obj : mObjects) {\n   32          delete obj;\n   33      }\n   ..\n   36  \n   37  void Scene::init(const TextMatrix& map) {\n   38:     for(int y = 0; y < map.getHeight(); ++y) {\n   39:         for(int x = 0; x < map.getWidth(); ++x) {\n   40              if(atLocal(x, y) == nullptr) {\n   41                  char c = map.get(x, y);\n   ..\n   70  void Scene::removeDead() {\n   71      std::vector<Unit*> toRemove;\n   72:     for(Object* obj : mObjects) {\n   73          Unit* unit = obj->as<Unit>();\n   74          if(unit != nullptr && unit->isDead()) {\n   ..\n   76          }\n   77      }\n   78:     for(Unit* unit : toRemove) {\n   79          remove(unit);\n   80      }\n   81  }\n   82  void Scene::update() {\n   83:     for(Object* object : mObjects) {\n   84          object->update();\n   85      }\n   ..\n   88  \n   89  void Scene::render(Render* render) {\n   90:     for(Object* object : mObjects) {\n   91          object->render(render);\n   92      }\n   ..\n   98  \n   99  Object* Scene::at(int x, int y) {\n  100:     for(Object* object : mObjects) {\n  101          if(object->hitTest(x, y)) {\n  102              return object;\n  ...\n  107  \n  108  Object* Scene::atLocal(int x, int y) {\n  109:      for(Object* object : mObjects) {\n  110           if(object->hitTest(mPos.x + x, mPos.y + y)) {\n  111               return object;\n\n/home/daveinnes/game/code/scene.h:\n   36      template <class T>\n   37      T* findAny() {\n   38:         for(Object* o : mObjects) {\n   39               if(o->is<T>()) {\n   40                  return o->as<T>();\n   ..\n   47      std::vector<T*> findAll() {\n   48          std::vector<T*> objs;\n   49:         for(Object* o : mObjects) {\n   50               if(o->is<T>()) {\n   51                  objs.push_back(o->as<T>());\n\n/home/daveinnes/game/code/textmatrix.cpp:\n   15  char TextMatrix::flip() {\n   16      std::string newText;\n   17:     for(int y = mHeight - 1; y >= 0; --y) {\n   18:         for(int x = 0; x < mWidth; ++x) {\n   19              char c = get(x, y);\n   20              newText += c;\n   ..\n   29      int x = 0;\n   30      int y = 0;\n   31:     for(char c : mText) {\n   32          if(c == '\\n') {\n   33              mWidth = std::max(mWidth, x);\n   ..\n   50      char startingChar = get(x, y);\n   51      int width = -1;\n   52:     for(int yy = y; yy < getHeight(); ++yy) {\n   53          if(get(x, yy) != startingChar) {\n   54              break;\n   ..\n   56  \n   57          bool incrementRow = false;\n   58:         for(int xx = x; xx < getWidth() + 1; ++xx) {\n   59              if(width > 0) {\n   60                  if(xx - x + 1 > width) {\n\n/home/daveinnes/game/code/unitbehavior.cpp:\n   23  Unit* UnitBehavior::pickTarget() {\n   24      World* world = Game::get()->world();\n   25:     for(int i = 0; i < 3; ++i) {\n   26          mAdjacentPos[i] = mUnit->mPos;\n   27          mAdjacentPos[i].y += mUnit->side();\n   ..\n   31  \n   32      Unit* target = nullptr;\n   33:     for(int i = 0; i < 3; ++i) {\n   34          Object* objAt = mAdjacentObjects[i] = world->at(mAdjacentPos[i]);\n   35          if(objAt != nullptr) {\n\n/home/daveinnes/game/code/util.h:\n   14  public:\n   15      template<typename T, typename... Targs>\n   16:     static std::string format(const char* format, T value, Targs... args) {\n   17          std::ostringstream ostr;\n   18:         formatHelper(ostr, format, value, args...);\n   19          return ostr.str();\n   20      }\n   21  \n   22  private:\n   23:     static void formatHelper(std::ostringstream& ostr, const char* format) {\n   24:         ostr << format;\n   25      }\n   26  \n   27      template<typename T, typename... Targs>\n   28:     static void formatHelper(std::ostringstream& ostr, const char* format, T value, Targs... args) {\n   29:         for ( ; *format != '\\0'; format++ ) {\n   30:             if ( *format == '%' ) {\n   31                 ostr << value;\n   32:                formatHelper(ostr, format+1, args...); // recursive call\n   33                 return;\n   34              }\n   35:             ostr << *format;\n   36          }\n   37      }\n   ..\n   40  class Log {\n   41  public:\n   42:     static void log(const char* format) {\n   43:         std::cout << format;\n   44      }\n   45      \n   46      template<typename T, typename... Targs>\n   47:     static void log(const char* format, T value, Targs... args) {\n   48:         for ( ; *format != '\\0'; format++ ) {\n   49:             if ( *format == '%' ) {\n   50                 std::cout << value;\n   51:                log(format+1, args...); // recursive call\n   52                 return;\n   53              }\n   54:             std::cout << *format;\n   55          }\n   56      }\n\n/home/daveinnes/game/code/world.cpp:\n   22  \n   23  World::~World() {\n   24:     for(Scene* scene : mScenes) {\n   25          delete scene;\n   26      }\n   ..\n   46          int x = margin;\n   47          int y = 0;\n   48:         for(int i = 0; i < count; ++i) {\n   49              Vector2 pos(x, y);\n   50              Base* base = new Base(map, pos, player);\n   ..\n   62          base->place<Nexus>();\n   63          Mine* mine = base->findAny<Mine>();\n   64:         for(int i = 0; i < startingWorkers; ++i) {\n   65              mine->addNode();\n   66              mine->addSupply();\n   ..\n   74              player = Game::get()->player(1);\n   75              map.flip();\n   76:             for(int i = 0; i < count; ++i) {\n   77                  Vector2 pos(x, y);\n   78                  Base* base = new Base(map, pos, player);\n   ..\n   92              base->place<Nexus>();\n   93              mine = base->findAny<Mine>();\n   94:             for(int i = 0; i < startingWorkers; ++i) {\n   95                  mine->addNode();\n   96                  mine->addSupply();\n   ..\n  115      Object* atObj = Scene::at(x, y);\n  116      if(atObj == nullptr) {\n  117:         for(Scene* scene : mScenes) {\n  118              atObj = scene->at(x, y);\n  119              if(atObj != nullptr) {\n  ...\n  127  void World::update() {\n  128      Scene::update();\n  129:     for(Scene* scene : mScenes) {\n  130          scene->update();\n  131      }\n  ...\n  134  void World::render(Render* render) {\n  135      Scene::render(render);\n  136:     for(Scene* scene : mScenes) {\n  137          scene->render(render);\n  138      }\n  ...\n  140  \n  141  bool World::remove(Object* obj) {\n  142:     for(Scene* scene : mScenes) {\n  143          if(scene->remove(obj)) {\n  144              return true;\n\n164 matches across 18 files\n\n\nSearching 78 files for \"world\"\n\n/home/daveinnes/game/bin/game:\n    <binary>\n\n/home/daveinnes/game/code/game.cpp:\n    6  #include \"object.h\"\n    7  #include \"render.h\"\n    8: #include \"world.h\"\n    9  #include \"vector.h\"\n   10  #include \"util.h\"\n   ..\n   52      mTuning = nullptr;\n   53  \n   54:     delete mWorld;\n   55:     mWorld = nullptr;\n   56  \n   57      delete mInput;\n   ..\n   81      mSelectedPlayer = mPlayers[0];\n   82  \n   83:     mWorld = new World(mTuning->get(\"world\"));\n   84      mInput = new Input();\n   85:     mRender = new Render(mWorld->getWidth(), mWorld->getHeight(), mTuning->get(\"render\"));\n   86      mTime = new Time();\n   87  \n   88      int guiWidth = mTuning->get(\"gui\")[\"width\"].asInt();\n   89:     mGui = new Gui(mWorld->getWidth(), 0, guiWidth, mWorld->getHeight(), playerCount);\n   90  }\n   91  \n   ..\n  107          }\n  108          mSelectedPlayer->processInput();\n  109:         mWorld->update();\n  110          mRender->beginFrame();\n  111:         mWorld->render(mRender);\n  112          mRender->draw(mTime->get());\n  113          mGui->draw();\n\n/home/daveinnes/game/code/game.h:\n    4  #include <vector>\n    5  \n    6: class World;\n    7  class Input;\n    8  class Render;\n    .\n   25      void processInput();\n   26  \n   27:     World* world() { return mWorld; }\n   28      Input* input() { return mInput; }\n   29      Render* render() { return mRender; }\n   ..\n   39  \n   40      static Game* sGame;\n   41:     World* mWorld;\n   42      Input* mInput;\n   43      Render* mRender;\n\n/home/daveinnes/game/code/object.cpp:\n    3  #include <cmath>\n    4  \n    5: #include \"world.h\"\n    6  #include \"render.h\"\n    7  #include \"input.h\"\n\n/home/daveinnes/game/code/object.h:\n    4  #include \"vector.h\"\n    5  \n    6: class World;\n    7  class Render;\n    8  class Input;\n\n/home/daveinnes/game/code/pathfinding.cpp:\n    1  #include \"pathfinding.h\"\n    2  #include \"game.h\"\n    3: #include \"world.h\"\n    4  \n    5  Pathfinding::Pathfinding() {\n\n/home/daveinnes/game/code/production.cpp:\n    9  #include \"unit.h\"\n   10  #include \"game.h\"\n   11: #include \"world.h\"\n   12  #include \"player.h\"\n   13  \n   ..\n   44  \n   45  bool Production::canSpawn() {\n   46:     return Game::get()->world()->at(mSpawnPos) == nullptr;\n   47  }\n   48  \n   ..\n   62  void Production::spawn(Unit* unit) {\n   63      mUnits.erase(std::find(mUnits.begin(), mUnits.end(), unit));\n   64:     Game::get()->world()->add(unit);\n   65      unit->spawned() = true;\n   66  }\n   ..\n   77                  spawn(unit);\n   78              } else {\n   79:                 Object* objAtSpawn = Game::get()->world()->at(mSpawnPos);\n   80                  if(objAtSpawn != nullptr) {\n   81                      Unit* blockingUnit = objAtSpawn->as<Unit>();\n\n/home/daveinnes/game/code/unit.cpp:\n    5  \n    6  #include \"game.h\"\n    7: #include \"world.h\"\n    8  #include \"time.h\"\n    9  #include \"assert.h\"\n\n/home/daveinnes/game/code/unitbehavior.cpp:\n    3  #include \"game.h\"\n    4  #include \"time.h\"\n    5: #include \"world.h\"\n    6  #include \"player.h\"\n    7  #include \"object.h\"\n    .\n   22  \n   23  Unit* UnitBehavior::pickTarget() {\n   24:     World* world = Game::get()->world();\n   25      for(int i = 0; i < 3; ++i) {\n   26          mAdjacentPos[i] = mUnit->mPos;\n   ..\n   32      Unit* target = nullptr;\n   33      for(int i = 0; i < 3; ++i) {\n   34:         Object* objAt = mAdjacentObjects[i] = world->at(mAdjacentPos[i]);\n   35          if(objAt != nullptr) {\n   36              Unit* potentialTarget = objAt->as<Unit>();\n   ..\n   69      }\n   70  \n   71:     World* world = Game::get()->world();\n   72      Vector2 targetPos = mUnit->mPos + direction;\n   73:     if(world->at(targetPos) == nullptr && world->isInBounds(targetPos)) {\n   74          mUnit->mPos += direction * mUnit->mSpeed * deltaTime;\n   75      }\n\n/home/daveinnes/game/code/waypoint.cpp:\n    1  #include \"waypoint.h\"\n    2  #include \"game.h\"\n    3: #include \"world.h\"\n    4  \n    5  Waypoint::Waypoint(const Vector2& pos, const Vector2& dimensions, char c)\n    .\n   13  \n   14  void Waypoint::collect() {\n   15:     Game::get()->world()->remove(this);\n   16  }\n   17  \n\n/home/daveinnes/game/code/world.cpp:\n    1: #include \"world.h\"\n    2  \n    3  #include <cmath>\n    .\n   13  #include \"pylon.h\"\n   14  \n   15: World::World(const Json::Value& tuning) {\n   16      if(tuning.isMember(\"bases\")) {\n   17          initBases(tuning[\"bases\"]);\n   ..\n   21  }\n   22  \n   23: World::~World() {\n   24      for(Scene* scene : mScenes) {\n   25          delete scene;\n   ..\n   27  }\n   28  \n   29: void World::initBases(const Json::Value& tuning) {\n   30      Player* player = Game::get()->player(0);\n   31  \n   ..\n  103  }\n  104  \n  105: void World::initMap(const Json::Value& tuning) {\n  106      TextMatrix map(tuning.asCString());\n  107      init(map);\n  108  }\n  109  \n  110: Object* World::at(const Vector2& pos) {\n  111      return at(std::floor(pos.x), std::floor(pos.y));\n  112  }\n  113  \n  114: Object* World::at(int x, int y) {\n  115      Object* atObj = Scene::at(x, y);\n  116      if(atObj == nullptr) {\n  ...\n  125  }\n  126  \n  127: void World::update() {\n  128      Scene::update();\n  129      for(Scene* scene : mScenes) {\n  ...\n  132  }\n  133  \n  134: void World::render(Render* render) {\n  135      Scene::render(render);\n  136      for(Scene* scene : mScenes) {\n  ...\n  139  }\n  140  \n  141: bool World::remove(Object* obj) {\n  142      for(Scene* scene : mScenes) {\n  143          if(scene->remove(obj)) {\n  ...\n  148  }\n  149  \n  150: bool World::isInBounds(const Vector2& pos) {\n  151      return pos.x >= 0 && pos.x < mWidth && pos.y >= 0 && pos.y < mHeight;\n  152  }\n\n/home/daveinnes/game/code/world.h:\n    1: #ifndef _WORLD_H_\n    2: #define _WORLD_H_\n    3  \n    4  #include <vector>\n    .\n   12  }\n   13  \n   14: class World : public Scene {\n   15  public:\n   16:     World(const Json::Value& tuning);\n   17:     virtual ~World();\n   18  \n   19      bool isInBounds(const Vector2& pos);\n\n/home/daveinnes/game/data/tuning.json:\n   10          \"bank\": [ 200, 0 ]\n   11      },\n   12:     \"world\": {\n   13          \"bases\": {\n   14              \"path\": \"../data/base.txt\",\n\n/home/daveinnes/game/data/tuning2.json:\n   13          }\n   14      },\n   15:     \"world\": {\n   16          \"bases\": {\n   17              \"path\": \"../data/base2.txt\",\n\n/home/daveinnes/game/data/tuning3.json:\n   13          }\n   14      },\n   15:     \"world\": {\n   16          \"map\": \"../data/map.txt\"\n   17      },\n\n/home/daveinnes/game/script/build.sh:\n   32  buildObject input\n   33  buildObject render\n   34: buildObject world\n   35  buildObject scene\n   36  buildObject object\n   ..\n   72      $G_DIR/bin/obj/input.o \\\n   73      $G_DIR/bin/obj/render.o \\\n   74:     $G_DIR/bin/obj/world.o \\\n   75      $G_DIR/bin/obj/object.o \\\n   76      $G_DIR/bin/obj/util.o \\\n\n103 matches across 16 files\n\n\nSearching 78 files for \"input\"\n\n/home/daveinnes/game/bin/game:\n    <binary>\n\n/home/daveinnes/game/code/base.cpp:\n    1  #include \"base.h\"\n    2  #include \"game.h\"\n    3: #include \"input.h\"\n    4  #include \"mine.h\"\n    5  #include \"lab.h\"\n    .\n   44  }\n   45  \n   46: void Base::processInput() {\n   47      if(mSelected) {\n   48:         int input = Game::get()->input()->get();\n   49:         switch(input) {\n   50              case 'e': {\n   51                  if(isNexusBuilt()) {\n\n/home/daveinnes/game/code/base.h:\n   13      \n   14      void select(bool selected);\n   15:     void processInput(); \n   16  \n   17      //Scene\n\n/home/daveinnes/game/code/game.cpp:\n    3  #include <ctime>\n    4  \n    5: #include \"input.h\"\n    6  #include \"object.h\"\n    7  #include \"render.h\"\n    .\n   55      mWorld = nullptr;\n   56  \n   57:     delete mInput;\n   58:     mInput = nullptr;\n   59  \n   60      delete mRender;\n   61:     mInput = nullptr;\n   62  \n   63      delete mGui;\n   ..\n   82  \n   83      mWorld = new World(mTuning->get(\"world\"));\n   84:     mInput = new Input();\n   85      mRender = new Render(mWorld->getWidth(), mWorld->getHeight(), mTuning->get(\"render\"));\n   86      mTime = new Time();\n   ..\n  101      while(mRunning) {\n  102          mTime->startFrame();\n  103:         mInput->read();\n  104:         processInput();\n  105          for(Player* player : mPlayers) {\n  106              player->update();\n  107          }\n  108:         mSelectedPlayer->processInput();\n  109          mWorld->update();\n  110          mRender->beginFrame();\n  ...\n  116  }\n  117  \n  118: void Game::processInput() {\n  119:     int key = mInput->get();\n  120      if(key == 'q') {\n  121          mRunning = false;\n\n/home/daveinnes/game/code/game.h:\n    5  \n    6  class World;\n    7: class Input;\n    8  class Render;\n    9  class Player;\n   ..\n   23      void reload();\n   24      void run();\n   25:     void processInput();\n   26  \n   27      World* world() { return mWorld; }\n   28:     Input* input() { return mInput; }\n   29      Render* render() { return mRender; }\n   30      Player* selectedPlayer() { return mSelectedPlayer; }\n   ..\n   40      static Game* sGame;\n   41      World* mWorld;\n   42:     Input* mInput;\n   43      Render* mRender;\n   44      std::vector<Player*> mPlayers;\n\n/home/daveinnes/game/code/input.cpp:\n    1: #include \"input.h\"\n    2  #include <ncurses.h>\n    3  \n    4: Input::Input()\n    5: : mInputValue(0) {\n    6  }\n    7  \n    8: void Input::read() {\n    9:     mInputValue = getch();\n   10  }\n   11  \n   12: int Input::get() {\n   13:     return mInputValue;\n   14  }\n   15  \n\n/home/daveinnes/game/code/input.h:\n    1: #ifndef _INPUT_H_\n    2: #define _INPUT_H_\n    3  \n    4: class Input {\n    5  public:\n    6:     Input();\n    7  \n    8      void read();\n    .\n   10      \n   11  private:\n   12:     int mInputValue;\n   13  };\n   14  \n\n/home/daveinnes/game/code/object.cpp:\n    5  #include \"world.h\"\n    6  #include \"render.h\"\n    7: #include \"input.h\"\n    8  #include \"assert.h\"\n    9  #include \"player.h\"\n\n/home/daveinnes/game/code/object.h:\n    6  class World;\n    7  class Render;\n    8: class Input;\n    9  class Player;\n   10  \n\n/home/daveinnes/game/code/player.cpp:\n    6  #include \"tuning.h\"\n    7  #include \"resource.h\"\n    8: #include \"input.h\"\n    9  #include \"base.h\"\n   10  #include \"pylon.h\"\n   ..\n   29  }\n   30  \n   31: void Player::processInput() {\n   32:     int c = Game::get()->input()->get();\n   33      switch(c) {\n   34          case KEY_LEFT: {\n   ..\n   45  \n   46      for(Base* base : mBases) {\n   47:         base->processInput();\n   48      }\n   49  }\n\n/home/daveinnes/game/code/player.h:\n   20      ~Player();\n   21  \n   22:     void processInput();\n   23      Resource* bank() { return mBank; }\n   24      Base* base(int index) { return mBases[index]; }\n\n/home/daveinnes/game/code/scene.h:\n    8  class Object;\n    9  class Render;\n   10: class Input;\n   11  class TextMatrix;\n   12  \n\n/home/daveinnes/game/script/build.sh:\n   30  buildObject main\n   31  buildObject game\n   32: buildObject input\n   33  buildObject render\n   34  buildObject world\n   ..\n   70      $G_DIR/bin/obj/main.o \\\n   71      $G_DIR/bin/obj/game.o \\\n   72:     $G_DIR/bin/obj/input.o \\\n   73      $G_DIR/bin/obj/render.o \\\n   74      $G_DIR/bin/obj/world.o \\\n\n77 matches across 13 files\n\n\nSearching 78 files for \"spawned()\"\n\n/home/daveinnes/game/code/production.cpp:\n   63      mUnits.erase(std::find(mUnits.begin(), mUnits.end(), unit));\n   64      Game::get()->world()->add(unit);\n   65:     unit->spawned() = true;\n   66  }\n   67  \n\n/home/daveinnes/game/code/unit.h:\n   29      float damage() { return mDamage; }\n   30      Unit*& target() { return mTarget; }\n   31:     bool& spawned() { return mSpawned; }\n   32  \n   33      //Buildable\n\n2 matches across 2 files\n\n\nSearching 78 files for \"findany\"\n\n/home/daveinnes/game/bin/game:\n    <binary>\n\n/home/daveinnes/game/code/base.cpp:\n   33  \n   34  bool Base::isNexusBuilt() {\n   35:     Nexus* nexus = findAny<Nexus>();\n   36      if(nexus != nullptr) {\n   37          return nexus->isBuilt();\n\n/home/daveinnes/game/code/playerbehavior.cpp:\n   25          Base* base = mPlayer->selectedBase();\n   26          if(base != nullptr) {\n   27:             Production* prod = base->findAny<Production>();\n   28              if(prod != nullptr && !prod->isBuilt() && prod->canBuild()) {\n   29                  prod->startBuild();\n   30              }\n   31:             Mine* mine = base->findAny<Mine>();\n   32              if(mine != nullptr && !mine->isBuilding() && mine->canBuild()) {\n   33                  mine->startBuild();\n   ..\n   37              }\n   38  \n   39:             Pylon* pylon = base->findAny<Pylon>();\n   40              if(pylon != nullptr \n   41                  && mPlayer->usedSupply() >= mPlayer->supply() - 1\n\n/home/daveinnes/game/code/scene.h:\n   35  \n   36      template <class T>\n   37:     T* findAny() {\n   38          for(Object* o : mObjects) {\n   39               if(o->is<T>()) {\n\n/home/daveinnes/game/code/world.cpp:\n   61          Base* base = player->base(selectedIndex);\n   62          base->place<Nexus>();\n   63:         Mine* mine = base->findAny<Mine>();\n   64          for(int i = 0; i < startingWorkers; ++i) {\n   65              mine->addNode();\n   ..\n   91              base = player->base(selectedIndex);\n   92              base->place<Nexus>();\n   93:             mine = base->findAny<Mine>();\n   94              for(int i = 0; i < startingWorkers; ++i) {\n   95                  mine->addNode();\n\n19 matches across 5 files\n",
+			"settings":
+			{
+				"buffer_size": 25800,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "code/production.cpp",
+			"settings":
+			{
+				"buffer_size": 3494,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "data/map.txt",
+			"settings":
+			{
+				"buffer_size": 399,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/pathfinding.cpp",
+			"settings":
+			{
+				"buffer_size": 1529,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/game.cpp",
+			"settings":
+			{
+				"buffer_size": 2713,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/unit.cpp",
+			"settings":
+			{
+				"buffer_size": 2237,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/unitbehavior.cpp",
+			"settings":
+			{
+				"buffer_size": 3288,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/game.h",
+			"settings":
+			{
+				"buffer_size": 968,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/waypoint.cpp",
+			"settings":
+			{
+				"buffer_size": 342,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/waypoint.h",
+			"settings":
+			{
+				"buffer_size": 499,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/unit.h",
+			"settings":
+			{
+				"buffer_size": 1409,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/buildable.cpp",
+			"settings":
+			{
+				"buffer_size": 1561,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/buildable.h",
+			"settings":
+			{
+				"buffer_size": 1022,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/object.h",
+			"settings":
+			{
+				"buffer_size": 1069,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/object.cpp",
+			"settings":
+			{
+				"buffer_size": 986,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/unitbehavior.h",
+			"settings":
+			{
+				"buffer_size": 644,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/world.cpp",
+			"settings":
+			{
+				"buffer_size": 3680,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/world.h",
+			"settings":
+			{
+				"buffer_size": 619,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/base.cpp",
+			"settings":
+			{
+				"buffer_size": 2320,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/base.h",
+			"settings":
+			{
+				"buffer_size": 862,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/scene.cpp",
+			"settings":
+			{
+				"buffer_size": 2472,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/objectfactory.cpp",
+			"settings":
+			{
+				"buffer_size": 1671,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "data/base2.txt",
+			"settings":
+			{
+				"buffer_size": 55,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/scene.h",
+			"settings":
+			{
+				"buffer_size": 1533,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack",
+				"Package Control: Enable Package"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"prefere",
+				"Preferences: Settings"
+			],
+			[
+				"preferences",
+				"Preferences: Settings"
+			],
+			[
+				"settings",
+				"Preferences: Settings – Syntax Specific"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/daveinnes/game",
+		"/home/daveinnes/game/bin",
+		"/home/daveinnes/game/code",
+		"/home/daveinnes/game/data",
+		"/home/daveinnes/game/script"
+	],
+	"file_history":
+	[
+		"/home/daveinnes/game/code/pathfinding.cpp",
+		"/home/daveinnes/game/code/main.cpp",
+		"/home/daveinnes/game/code/util.cpp",
+		"/home/daveinnes/game/code/util.h",
+		"/home/daveinnes/game/code/render.h",
+		"/home/daveinnes/game/code/input.h",
+		"/home/daveinnes/game/code/input.cpp",
+		"/home/daveinnes/game/code/vector.h",
+		"/home/daveinnes/game/code/world.cpp",
+		"/home/daveinnes/game/code/wall.h",
+		"/home/daveinnes/game/code/wall.cpp",
+		"/home/daveinnes/game/code/game.h",
+		"/home/daveinnes/game/code/time.h",
+		"/home/daveinnes/game/code/game.cpp",
+		"/home/daveinnes/game/code/time.cpp",
+		"/home/daveinnes/game/code/gui.h",
+		"/home/daveinnes/game/code/gui.cpp",
+		"/home/daveinnes/game/code/objectfactory.cpp",
+		"/home/daveinnes/game/code/gatherer.h",
+		"/home/daveinnes/game/script/headerschanged.sh",
+		"/home/daveinnes/game/code/gatherer.cpp",
+		"/home/daveinnes/game/code/objectfactory.h",
+		"/home/daveinnes/game/code/world.h",
+		"/home/daveinnes/game/code/object.h",
+		"/home/daveinnes/game/code/object.cpp",
+		"/home/daveinnes/game/code/buildable.h",
+		"/home/daveinnes/game/code/buildable.cpp",
+		"/home/daveinnes/game/data/base2.txt",
+		"/home/daveinnes/game/code/playerbehavior.h",
+		"/home/daveinnes/game/code/playerbehavior.cpp",
+		"/home/daveinnes/game/code/render.cpp",
+		"/home/daveinnes/game/code/assert.h",
+		"/home/daveinnes/game/data/base.txt",
+		"/home/daveinnes/game/code/pylon.h",
+		"/home/daveinnes/game/code/pylon.cpp",
+		"/home/daveinnes/game/code/scene.h",
+		"/home/daveinnes/game/code/textmatrix.h",
+		"/home/daveinnes/game/code/textmatrix.cpp",
+		"/home/daveinnes/game/code/scene.cpp",
+		"/home/daveinnes/game/script/debug.sh",
+		"/home/daveinnes/game/script/go.sh",
+		"/home/daveinnes/game/script/game",
+		"/home/daveinnes/game/script/run.sh",
+		"/home/daveinnes/game/script/build.sh",
+		"/home/daveinnes/game/script/clean.sh",
+		"/home/daveinnes/game/code/tuning.h",
+		"/home/daveinnes/game/code/tuning.cpp",
+		"/usr/include/jsoncpp/json/value.h",
+		"/home/daveinnes/game/data/tuning.json",
+		"/home/daveinnes/game/data/tuning2.json",
+		"/home/daveinnes/game/data/tuning3.json",
+		"/home/daveinnes/game/code/production.h",
+		"/home/daveinnes/game/code/unit.h",
+		"/home/daveinnes/game/code/unit.cpp",
+		"/home/daveinnes/game/code/unitbehavior.h",
+		"/home/daveinnes/game/code/pathfinding.h",
+		"/home/daveinnes/game/code/unitbehavior.cpp",
+		"/home/daveinnes/game/code/nexus.h",
+		"/home/daveinnes/game/code/nexus.cpp",
+		"/home/daveinnes/game/code/production.cpp",
+		"/home/daveinnes/game/code/building.h",
+		"/home/daveinnes/game/code/building.cpp",
+		"/home/daveinnes/game/code/multibuilding.h",
+		"/home/daveinnes/game/code/multibuilding.cpp",
+		"/home/daveinnes/game/code/player.h",
+		"/home/daveinnes/game/code/base.h",
+		"/home/daveinnes/game/code/base.cpp",
+		"/home/daveinnes/game/code/resource.h",
+		"/home/daveinnes/game/code/resource.cpp",
+		"/home/daveinnes/game/code/player.cpp",
+		"/home/daveinnes/game/data/map.txt",
+		"/home/daveinnes/game/code/waypoint.h",
+		"/home/daveinnes/game/code/waypoint.cpp",
+		"/home/daveinnes/game/code/mine.h",
+		"/home/daveinnes/game/code/mine.cpp",
+		"/home/daveinnes/game/code/lab.cpp",
+		"/home/daveinnes/game/code/lab.h",
+		"/home/daveinnes/game/game.sublime-project",
+		"/home/daveinnes/game/bin/game",
+		"/home/daveinnes/game/code/bank.cpp",
+		"/home/daveinnes/.config/sublime-text-3/Packages/User/ClangAutoComplete.sublime-settings",
+		"/home/daveinnes/.config/sublime-text-3/Packages/ClangAutoComplete/ClangAutoComplete.sublime-settings",
+		"/usr/include/ncurses.h",
+		"/home/daveinnes/.config/sublime-text-3/Packages/Clang Format/Default (Linux).sublime-keymap",
+		"/home/daveinnes/hackerrank/f/include/hackerrank.h",
+		"/home/daveinnes/hackerrank/picking/input.txt",
+		"/home/daveinnes/hackerrank/picking/answer.txt",
+		"/home/daveinnes/hackerrank/t/answer.txt",
+		"/home/daveinnes/hackerrank/t/input.txt",
+		"/home/daveinnes/hackerrank/t/output.txt",
+		"/home/daveinnes/hackerrank/f/run.sh",
+		"/home/daveinnes/hackerrank/f/test.sh",
+		"/home/daveinnes/hackerrank/f/go.sh",
+		"/home/daveinnes/hackerrank/climbing/answer.txt",
+		"/home/daveinnes/hackerrank/climbing/output.txt",
+		"/home/daveinnes/hackerrank/climbing/input.txt",
+		"/home/daveinnes/hackerrank/f/hackerrank.h",
+		"/usr/local/bin/hackerrank",
+		"/home/daveinnes/hackerrank/f/new.sh",
+		"/home/daveinnes/hackerrank/magicsquares/code.cpp"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 198.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"findany",
+			"spawned()",
+			"spawned",
+			"mAttackabLeobjects",
+			"mAdjacentObjects",
+			"sTuningFiles",
+			"mtuning",
+			"input",
+			"process",
+			"clear",
+			"world",
+			"for",
+			"length",
+			"queue",
+			"pop",
+			"empty",
+			"init",
+			"initmap",
+			"mapinit",
+			"prevRowCount",
+			"'_",
+			"_",
+			"init",
+			"isDead",
+			"unit",
+			"has",
+			"operator[]",
+			"[]",
+			"operator",
+			"initbas",
+			"MAX_",
+			"_MAX",
+			"INT_MAX",
+			"MAX_INT",
+			"finishBuild(",
+			"finish",
+			"startBuild(",
+			"die",
+			"mside",
+			"relo",
+			"mplayer",
+			"die",
+			"type == getType()",
+			"implementsType",
+			"bool implementsType(char type)",
+			"char getType() { return kChar; }",
+			"char kChar",
+			"char getType() override { return kChar; }",
+			"static const char kChar = 'm';",
+			"char kType",
+			"kChar",
+			"Buildable",
+			"getType",
+			"ceil",
+			"floor",
+			"targetPos",
+			"spawn",
+			"mAdjacentObject",
+			"adjacentPos",
+			"adjacent",
+			"mHitTime",
+			"hittime",
+			"Multibuilding",
+			"mWorkerCount",
+			"Gatherer",
+			"blinkLeft",
+			"addGatherer",
+			"public Buildable",
+			"add",
+			"input()->get()",
+			"Game",
+			"GAme",
+			"game",
+			"player",
+			"mPlayers",
+			"mPl",
+			"mplayer",
+			"mPlayer",
+			"mInputChar",
+			"color",
+			"fill",
+			"put",
+			"baseMargin",
+			"baseSpacing",
+			"baseCount",
+			"basePath",
+			"input()->get",
+			"World",
+			"World::",
+			"Prefab",
+			"_PREFAB_H_",
+			"_MINE_H_",
+			"Mine",
+			"kChar",
+			"kchar",
+			"mine.h",
+			"_MINERAL_PATCH_H_",
+			"mMinerCount",
+			"Mine",
+			"_BANK_H_",
+			"\t",
+			"object->dim()",
+			"object->pos()",
+			"getPos()",
+			"_MAP_H_",
+			"Map",
+			"TextMatrix",
+			"_BASE_H_",
+			"\\",
+			"mFrameStartTime",
+			"mTime",
+			"mTimez",
+			"mTime",
+			"\t",
+			"mineralpatch",
+			"MineralPatch",
+			"Fargs",
+			"str",
+			"\"file.h\"",
+			"world",
+			"input",
+			"\t",
+			"pos",
+			"\t",
+			"vector",
+			"WINDOW",
+			"\t"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"mAttackableObjects",
+			"prevRowSize",
+			"type == kType",
+			"bool implementsType(int type)",
+			"int getType() override { return kType; }",
+			"static const char kChar = 'm';\n    static const int kType = 'm';",
+			"static const char kChar = 'm';\nstatic const int kType = 'm';",
+			"static const char kChar = 'm';\\nstatic const int kType = 'm';",
+			"int kType",
+			"kType",
+			"direction",
+			"mAdjacentObjects",
+			"mAdjacentPos",
+			"adjacentPos",
+			"mHitAnimationTime",
+			"MultiBuilding",
+			"mNodeCount",
+			"Multibuilding",
+			"buildingCount",
+			"",
+			"mPlayers",
+			"mInputValue",
+			"colour",
+			"margin",
+			"spacing",
+			"count",
+			"path",
+			"Scene",
+			"Scene::",
+			"Scene",
+			"_SCENE_H_",
+			"_LAB_H_",
+			"Lab",
+			"gatherer.h",
+			"_GATHERER_H_",
+			"mGathererCount",
+			"Gatherer",
+			"_RESOURCE_H_",
+			"    ",
+			"mDimensions",
+			"mPos",
+			"_TEXTMATRIX_H_H",
+			"TextMatrix",
+			"_PREFAB_H_",
+			"",
+			"mTime",
+			"mFrameStartTime",
+			"    ",
+			"mine",
+			"Mine",
+			"args",
+			"ostr",
+			"\"util.h\"",
+			"mInput",
+			"    "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "code/pathfinding.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								921,
+								921
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 114.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "code/assert.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 560,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "code/vector.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1034,
+								1034
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25800,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										213,
+										219
+									],
+									[
+										438,
+										441
+									],
+									[
+										608,
+										611
+									],
+									[
+										916,
+										919
+									],
+									[
+										1255,
+										1258
+									],
+									[
+										1456,
+										1459
+									],
+									[
+										1717,
+										1720
+									],
+									[
+										1777,
+										1780
+									],
+									[
+										2011,
+										2014
+									],
+									[
+										2186,
+										2189
+									],
+									[
+										2420,
+										2423
+									],
+									[
+										2608,
+										2611
+									],
+									[
+										2821,
+										2824
+									],
+									[
+										2989,
+										2992
+									],
+									[
+										3160,
+										3163
+									],
+									[
+										3335,
+										3338
+									],
+									[
+										3615,
+										3618
+									],
+									[
+										3671,
+										3674
+									],
+									[
+										3954,
+										3957
+									],
+									[
+										4188,
+										4191
+									],
+									[
+										4357,
+										4360
+									],
+									[
+										4482,
+										4485
+									],
+									[
+										4680,
+										4683
+									],
+									[
+										4843,
+										4846
+									],
+									[
+										4903,
+										4906
+									],
+									[
+										5193,
+										5196
+									],
+									[
+										5244,
+										5247
+									],
+									[
+										5453,
+										5456
+									],
+									[
+										5504,
+										5507
+									],
+									[
+										5644,
+										5647
+									],
+									[
+										5694,
+										5697
+									],
+									[
+										5893,
+										5896
+									],
+									[
+										6037,
+										6040
+									],
+									[
+										6095,
+										6098
+									],
+									[
+										6325,
+										6328
+									],
+									[
+										6502,
+										6505
+									],
+									[
+										6623,
+										6626
+									],
+									[
+										6771,
+										6774
+									],
+									[
+										6922,
+										6925
+									],
+									[
+										7104,
+										7107
+									],
+									[
+										7341,
+										7344
+									],
+									[
+										7545,
+										7548
+									],
+									[
+										7780,
+										7783
+									],
+									[
+										7835,
+										7838
+									],
+									[
+										8002,
+										8005
+									],
+									[
+										8190,
+										8193
+									],
+									[
+										8377,
+										8380
+									],
+									[
+										8651,
+										8654
+									],
+									[
+										8837,
+										8840
+									],
+									[
+										9116,
+										9119
+									],
+									[
+										9135,
+										9138
+									],
+									[
+										9224,
+										9227
+									],
+									[
+										9243,
+										9246
+									],
+									[
+										9362,
+										9365
+									],
+									[
+										9413,
+										9416
+									],
+									[
+										9446,
+										9449
+									],
+									[
+										9549,
+										9552
+									],
+									[
+										9600,
+										9603
+									],
+									[
+										9649,
+										9652
+									],
+									[
+										9658,
+										9661
+									],
+									[
+										9674,
+										9677
+									],
+									[
+										9712,
+										9715
+									],
+									[
+										9789,
+										9792
+									],
+									[
+										9808,
+										9811
+									],
+									[
+										9925,
+										9928
+									],
+									[
+										10042,
+										10045
+									],
+									[
+										10080,
+										10083
+									],
+									[
+										10203,
+										10206
+									],
+									[
+										10252,
+										10255
+									],
+									[
+										10261,
+										10264
+									],
+									[
+										10277,
+										10280
+									],
+									[
+										10315,
+										10318
+									],
+									[
+										10401,
+										10404
+									],
+									[
+										10523,
+										10526
+									],
+									[
+										10643,
+										10646
+									],
+									[
+										10793,
+										10796
+									],
+									[
+										11033,
+										11036
+									],
+									[
+										11258,
+										11261
+									],
+									[
+										11512,
+										11515
+									],
+									[
+										11736,
+										11739
+									],
+									[
+										11927,
+										11930
+									],
+									[
+										12097,
+										12100
+									],
+									[
+										12244,
+										12247
+									],
+									[
+										12561,
+										12566
+									],
+									[
+										12685,
+										12690
+									],
+									[
+										12704,
+										12709
+									],
+									[
+										12823,
+										12828
+									],
+									[
+										12835,
+										12840
+									],
+									[
+										12855,
+										12860
+									],
+									[
+										12931,
+										12936
+									],
+									[
+										12951,
+										12956
+									],
+									[
+										13126,
+										13131
+									],
+									[
+										13159,
+										13164
+									],
+									[
+										13297,
+										13302
+									],
+									[
+										13368,
+										13373
+									],
+									[
+										13546,
+										13551
+									],
+									[
+										13651,
+										13656
+									],
+									[
+										13658,
+										13663
+									],
+									[
+										13676,
+										13681
+									],
+									[
+										13834,
+										13839
+									],
+									[
+										13842,
+										13847
+									],
+									[
+										13991,
+										13996
+									],
+									[
+										14138,
+										14143
+									],
+									[
+										14304,
+										14309
+									],
+									[
+										14467,
+										14472
+									],
+									[
+										14593,
+										14598
+									],
+									[
+										14791,
+										14796
+									],
+									[
+										14982,
+										14987
+									],
+									[
+										15216,
+										15221
+									],
+									[
+										15389,
+										15394
+									],
+									[
+										15519,
+										15524
+									],
+									[
+										15526,
+										15531
+									],
+									[
+										15547,
+										15552
+									],
+									[
+										15776,
+										15781
+									],
+									[
+										15942,
+										15947
+									],
+									[
+										15949,
+										15954
+									],
+									[
+										15970,
+										15975
+									],
+									[
+										16049,
+										16054
+									],
+									[
+										16084,
+										16089
+									],
+									[
+										16310,
+										16315
+									],
+									[
+										16480,
+										16485
+									],
+									[
+										16575,
+										16580
+									],
+									[
+										16663,
+										16668
+									],
+									[
+										16670,
+										16675
+									],
+									[
+										16820,
+										16825
+									],
+									[
+										16828,
+										16833
+									],
+									[
+										16943,
+										16948
+									],
+									[
+										17084,
+										17089
+									],
+									[
+										17229,
+										17234
+									],
+									[
+										17353,
+										17358
+									],
+									[
+										17492,
+										17497
+									],
+									[
+										17614,
+										17619
+									],
+									[
+										17756,
+										17761
+									],
+									[
+										17901,
+										17906
+									],
+									[
+										18083,
+										18088
+									],
+									[
+										18108,
+										18113
+									],
+									[
+										18186,
+										18191
+									],
+									[
+										18235,
+										18240
+									],
+									[
+										18289,
+										18294
+									],
+									[
+										18454,
+										18459
+									],
+									[
+										18621,
+										18626
+									],
+									[
+										18789,
+										18794
+									],
+									[
+										18962,
+										18967
+									],
+									[
+										19124,
+										19129
+									],
+									[
+										19417,
+										19422
+									],
+									[
+										19523,
+										19528
+									],
+									[
+										19579,
+										19584
+									],
+									[
+										19600,
+										19605
+									],
+									[
+										19638,
+										19643
+									],
+									[
+										19831,
+										19836
+									],
+									[
+										19954,
+										19959
+									],
+									[
+										20079,
+										20084
+									],
+									[
+										20098,
+										20103
+									],
+									[
+										20162,
+										20167
+									],
+									[
+										20291,
+										20296
+									],
+									[
+										20303,
+										20308
+									],
+									[
+										20528,
+										20533
+									],
+									[
+										20565,
+										20570
+									],
+									[
+										20715,
+										20720
+									],
+									[
+										20843,
+										20848
+									],
+									[
+										20875,
+										20880
+									],
+									[
+										21026,
+										21031
+									],
+									[
+										21153,
+										21158
+									],
+									[
+										21226,
+										21231
+									],
+									[
+										21233,
+										21238
+									],
+									[
+										21251,
+										21256
+									],
+									[
+										21446,
+										21451
+									],
+									[
+										21454,
+										21459
+									],
+									[
+										21586,
+										21591
+									],
+									[
+										21638,
+										21643
+									],
+									[
+										21645,
+										21650
+									],
+									[
+										21663,
+										21668
+									],
+									[
+										21708,
+										21713
+									],
+									[
+										21736,
+										21741
+									],
+									[
+										21786,
+										21791
+									],
+									[
+										21820,
+										21825
+									],
+									[
+										21901,
+										21906
+									],
+									[
+										21926,
+										21931
+									],
+									[
+										21956,
+										21961
+									],
+									[
+										21990,
+										21995
+									],
+									[
+										22081,
+										22086
+									],
+									[
+										22220,
+										22225
+									],
+									[
+										22374,
+										22379
+									],
+									[
+										22522,
+										22527
+									],
+									[
+										22632,
+										22637
+									],
+									[
+										22674,
+										22679
+									],
+									[
+										22825,
+										22830
+									],
+									[
+										22946,
+										22951
+									],
+									[
+										23151,
+										23156
+									],
+									[
+										23297,
+										23302
+									],
+									[
+										23456,
+										23461
+									],
+									[
+										23780,
+										23789
+									],
+									[
+										23960,
+										23969
+									],
+									[
+										24234,
+										24241
+									],
+									[
+										24507,
+										24514
+									],
+									[
+										24713,
+										24720
+									],
+									[
+										24932,
+										24939
+									],
+									[
+										25151,
+										25158
+									],
+									[
+										25409,
+										25416
+									],
+									[
+										25654,
+										25661
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								24050,
+								24050
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 6,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 13058.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "code/production.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 125.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "data/map.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								196,
+								196
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "code/pathfinding.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								467,
+								467
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 72.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "code/game.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2713,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								306,
+								306
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1014.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "code/unit.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								384,
+								384
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "code/unitbehavior.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								260,
+								260
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "code/game.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 968,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "code/waypoint.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "code/waypoint.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 499,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "code/unit.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 290.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "code/buildable.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1561,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "code/buildable.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "code/object.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1069,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								670,
+								670
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 37.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "code/object.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 986,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								671,
+								671
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 64.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "code/unitbehavior.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 644,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								331,
+								331
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "code/world.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3680,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2850,
+								2850
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1497.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "code/world.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								472,
+								472
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "code/base.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "code/base.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "code/scene.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2472,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								824,
+								824
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 26.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "code/objectfactory.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1671,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								543,
+								543
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 15.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "data/base2.txt",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 55,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "code/scene.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1533,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								894,
+								894
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 166.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 74.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.clipboard_manager":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "game.sublime-project",
+	"replace":
+	{
+		"height": 69.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"vecto",
+				"code/vector.h"
+			],
+			[
+				"path",
+				"code/pathfinding.cpp"
+			],
+			[
+				"beha",
+				"code/unitbehavior.cpp"
+			],
+			[
+				"objectf",
+				"code/objectfactory.cpp"
+			],
+			[
+				"way",
+				"code/waypoint.h"
+			],
+			[
+				"unitb",
+				"code/unitbehavior.h"
+			],
+			[
+				"un",
+				"code/unit.h"
+			],
+			[
+				"sc",
+				"code/scene.h"
+			],
+			[
+				"bas",
+				"code/base.cpp"
+			],
+			[
+				"worl",
+				"code/world.cpp"
+			],
+			[
+				"pro",
+				"code/production.cpp"
+			],
+			[
+				"fac",
+				"code/objectfactory.cpp"
+			],
+			[
+				"uni",
+				"code/unit.cpp"
+			],
+			[
+				"unit",
+				"code/unit.cpp"
+			],
+			[
+				"ve",
+				"code/vector.h"
+			],
+			[
+				"obje",
+				"code/object.h"
+			],
+			[
+				"game",
+				"code/game.cpp"
+			],
+			[
+				"obj",
+				"code/object.h"
+			],
+			[
+				"buildabl",
+				"code/buildable.cpp"
+			],
+			[
+				"wor",
+				"code/world.cpp"
+			],
+			[
+				"uin",
+				"code/unit.cpp"
+			],
+			[
+				"v",
+				"code/vector.h"
+			],
+			[
+				"buid",
+				"script/build.sh"
+			],
+			[
+				"unitbe",
+				"code/unitbehavior.cpp"
+			],
+			[
+				"scene",
+				"code/scene.cpp"
+			],
+			[
+				"tex",
+				"code/textmatrix.cpp"
+			],
+			[
+				"building",
+				"code/building.h"
+			],
+			[
+				"wal",
+				"code/wall.cpp"
+			],
+			[
+				"wayp",
+				"code/waypoint.h"
+			],
+			[
+				"wall",
+				"code/wall.cpp"
+			],
+			[
+				"map",
+				"data/map.txt"
+			],
+			[
+				"text",
+				"code/textmatrix.cpp"
+			],
+			[
+				"objec",
+				"code/objectfactory.cpp"
+			],
+			[
+				"sce",
+				"code/scene.cpp"
+			],
+			[
+				"world",
+				"code/world.cpp"
+			],
+			[
+				"bu",
+				"code/building.cpp"
+			],
+			[
+				"wa",
+				"code/wall.h"
+			],
+			[
+				"buidling",
+				"code/building.cpp"
+			],
+			[
+				"wo",
+				"code/world.cpp"
+			],
+			[
+				"ob",
+				"code/objectfactory.cpp"
+			],
+			[
+				"w",
+				"code/waypoint.h"
+			],
+			[
+				"build",
+				"script/build.sh"
+			],
+			[
+				"u",
+				"code/unit.cpp"
+			],
+			[
+				"buildin",
+				"code/building.h"
+			],
+			[
+				"buil",
+				"script/build.sh"
+			],
+			[
+				"playerb",
+				"code/playerbehavior.h"
+			],
+			[
+				"valu",
+				"/usr/include/jsoncpp/json/value.h"
+			],
+			[
+				"tuing.h",
+				"code/tuning.h"
+			],
+			[
+				"tuning",
+				"data/tuning2.json"
+			],
+			[
+				"playerbe",
+				"code/playerbehavior.cpp"
+			],
+			[
+				"mul",
+				"code/multibuilding.cpp"
+			],
+			[
+				"tu",
+				"data/tuning2.json"
+			],
+			[
+				"gam",
+				"code/game.cpp"
+			],
+			[
+				"pl",
+				"code/playerbehavior.cpp"
+			],
+			[
+				"player",
+				"code/player.cpp"
+			],
+			[
+				"pla",
+				"code/player.h"
+			],
+			[
+				"p",
+				"code/playerbehavior.cpp"
+			],
+			[
+				"tunin",
+				"data/tuning.json"
+			],
+			[
+				"prod",
+				"code/production.cpp"
+			],
+			[
+				"ne",
+				"code/nexus.cpp"
+			],
+			[
+				"building.cpp",
+				"code/building.cpp"
+			],
+			[
+				"pyl",
+				"code/pylon.cpp"
+			],
+			[
+				"multi",
+				"code/multibuilding.cpp"
+			],
+			[
+				"rodu",
+				"code/production.h"
+			],
+			[
+				"buildab",
+				"code/buildable.cpp"
+			],
+			[
+				"beh",
+				"code/playerbehavior.cpp"
+			],
+			[
+				"base",
+				"code/base.cpp"
+			],
+			[
+				"play",
+				"code/player.h"
+			],
+			[
+				"mult",
+				"code/multibuilding.cpp"
+			],
+			[
+				"gath",
+				"code/gatherer.cpp"
+			],
+			[
+				"min",
+				"code/mine.h"
+			],
+			[
+				"s",
+				"code/scene.h"
+			],
+			[
+				"gather",
+				"code/gatherer.cpp"
+			],
+			[
+				"tim",
+				"code/time.h"
+			],
+			[
+				"ba",
+				"code/base.cpp"
+			],
+			[
+				"py",
+				"code/pylon.cpp"
+			],
+			[
+				"ren",
+				"code/render.cpp"
+			],
+			[
+				"main",
+				"code/main.cpp"
+			],
+			[
+				"re",
+				"code/render.cpp"
+			],
+			[
+				"tuing.c",
+				"code/tuning.cpp"
+			],
+			[
+				"tuning2",
+				"data/tuning2.json"
+			],
+			[
+				"builda",
+				"code/buildable.cpp"
+			],
+			[
+				"mu",
+				"code/multibuilding.cpp"
+			],
+			[
+				"base.t",
+				"data/base.txt"
+			],
+			[
+				"bui",
+				"code/building.cpp"
+			],
+			[
+				"tun",
+				"data/tuning.json"
+			],
+			[
+				"scen",
+				"code/scene.h"
+			],
+			[
+				"ojb",
+				"code/objectfactory.cpp"
+			],
+			[
+				"buildsh",
+				"script/build.sh"
+			],
+			[
+				"nex",
+				"code/nexus.cpp"
+			],
+			[
+				"f",
+				"Find Results"
+			],
+			[
+				"",
+				"Find Results"
+			],
+			[
+				"fin",
+				"Find Results"
+			],
+			[
+				"buildi",
+				"code/building.h"
+			],
+			[
+				"Gather",
+				"code/gatherer.h"
+			],
+			[
+				"vec",
+				"code/vector.h"
+			],
+			[
+				"u nitbe",
+				"code/unitbehavior.h"
+			],
+			[
+				"build.s",
+				"script/build.sh"
+			],
+			[
+				"unt",
+				"code/unit.cpp"
+			],
+			[
+				"u ",
+				"code/unit.cpp"
+			],
+			[
+				"head",
+				"script/headerschanged.sh"
+			],
+			[
+				"uildab",
+				"code/buildable.cpp"
+			],
+			[
+				"ga",
+				"code/gatherer.cpp"
+			],
+			[
+				"Build",
+				"code/building.cpp"
+			],
+			[
+				"Building",
+				"code/building.cpp"
+			],
+			[
+				"Buil",
+				"code/buildable.h"
+			],
+			[
+				"t",
+				"data/tuning.json"
+			],
+			[
+				"gat",
+				"code/gatherer.cpp"
+			],
+			[
+				"tuni",
+				"data/tuning.json"
+			],
+			[
+				"res",
+				"code/resource.h"
+			],
+			[
+				"bi",
+				"code/buildable.h"
+			],
+			[
+				"pr",
+				"code/production.h"
+			],
+			[
+				"gui",
+				"code/gui.cpp"
+			],
+			[
+				"tuning.js",
+				"data/tuning.json"
+			],
+			[
+				"ut",
+				"code/util.h"
+			],
+			[
+				"vect",
+				"code/vector.h"
+			],
+			[
+				"game.c",
+				"code/game.cpp"
+			],
+			[
+				"mine",
+				"code/mine.cpp"
+			],
+			[
+				"time",
+				"code/time.cpp"
+			],
+			[
+				"n",
+				"code/nexus.h"
+			],
+			[
+				"ass",
+				"code/assert.h"
+			],
+			[
+				"objectfa",
+				"code/objectfactory.cpp"
+			],
+			[
+				"buidab",
+				"code/buildable.cpp"
+			],
+			[
+				"nexu",
+				"code/nexus.h"
+			],
+			[
+				"bilding",
+				"code/building.h"
+			],
+			[
+				"produc",
+				"code/production.h"
+			],
+			[
+				"object",
+				"code/object.h"
+			],
+			[
+				"base.",
+				"code/base.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 1000.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/hackerrank/hackerrank.sublime-project"
+			]
+		],
+		"width": 760.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 217.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

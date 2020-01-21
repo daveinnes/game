@@ -13,13 +13,7 @@
         }
     },
     "world": {
-        "bases": {
-            "path": "../data/base2.txt",
-            "count": 7,
-            "spacing": [5, 25],
-            "margin": 10,
-            "startingWorkers": 2
-        }
+        "map": "../data/map.txt"
     },
     "render": {
         "blinkPeriod": 0.1
@@ -69,5 +63,14 @@
         "buildTime": 5,
         "supplyPerNode": 10,
         "health": 100
+    },
+    "wall" : {
+        "cost": [ 10, 0],
+        "supplyCost": 0,
+        "buildTime": 1,
+        "health": 50
+    },
+    "waypoint" : {
+        
     }
 }

@@ -8,6 +8,8 @@
 #include "unit.h"
 #include "nexus.h"
 #include "pylon.h"
+#include "wall.h"
+#include "waypoint.h"
 
 Object* ObjectFactory::newObject(const Vector2& pos, const Vector2& dimensions, char c) {
     Object* newObject = nullptr;
@@ -37,8 +39,19 @@ Object* ObjectFactory::newObject(const Vector2& pos, const Vector2& dimensions, 
             newObject = new Pylon(pos, dimensions, tuning->get("pylon"), Pylon::kChar);
             break;
         }
+        case Wall::kChar: {
+            newObject = new Wall(pos, dimensions, tuning->get("wall"), Wall::kChar);
+            break;
+        }
         default: {
             break;
+        }
+    }
+
+    if(newObject == nullptr) {
+        int waypointId = c - 48;
+        if(waypointId >= 0 && waypointId <= 9) {
+            newObject = new Waypoint(pos, dimensions, c);
         }
     }
     return newObject;

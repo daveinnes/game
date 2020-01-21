@@ -14,7 +14,7 @@
 #include "time.h"
 #include "textmatrix.h"
 
-static const char* sTuningFiles[] = {"../data/tuning2.json", "../data/tuning2.json"};
+static const char* sTuningFiles[] = {"../data/tuning3.json"};
 
 Game* Game::sGame;
 

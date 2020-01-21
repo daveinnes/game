@@ -14,7 +14,7 @@ Unit::Unit(const Vector2& pos, const Vector2& dimensions, const Json::Value& tun
 : Buildable(pos, dimensions, tuning, c)
 , mAttackTime(0)
 , mReceivedAttackTime(0)
-, mSpawned(false) 
+, mSpawned(true) 
 , mTarget(nullptr)
 , mDead(false) {
     mHealth = tuning["health"].asFloat();

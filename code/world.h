@@ -27,6 +27,7 @@ public:
 
 private:
     void initBases(const Json::Value& tuning);
+    void initMap(const Json::Value& tuning);
 
     std::vector<Scene*> mScenes;
 };

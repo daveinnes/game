@@ -22,7 +22,7 @@ public:
     void processInput();
     Resource* bank() { return mBank; }
     Base* base(int index) { return mBases[index]; }
-    Base* selectedBase() { return mBases[mSelectedBaseIndex]; }
+    Base* selectedBase();
     void add(Base* base) { mBases.push_back(base); }
     void update();
     void selectBase(int index);

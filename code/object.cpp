@@ -27,6 +27,14 @@ void Object::render(Render* render) {
     render->put(mPos.x, mPos.y, mChar, mColour);
 }
 
+bool Object::isAdjacent(Object* obj) const {
+    const Vector2& distance = obj->pos() - mPos;
+    if(distance.length() <= 1.0f) {
+        return true;
+    }
+    return false;
+}
+
 bool Object::hitTest(int x, int y) {
     bool hit =  x >= std::floor(mPos.x)
                 && x < (std::floor(mPos.x) + mDimensions.x)

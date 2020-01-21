@@ -31,6 +31,7 @@ public:
         return nullptr;
     }
 
+    bool isAdjacent(Object* obj) const;
     bool hitTest(int x, int y);
     Vector2& pos() { return mPos; }
     Vector2& dim() { return mDimensions; }

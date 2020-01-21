@@ -54,6 +54,17 @@ public:
         return objs;
     }
 
+    template <class T>
+    std::vector<T*> adjacent(Object* obj) {
+        std::vector<T*> objs;
+        for(Object* o : mObjects) {
+             if(o->is<T>() && o->isAdjacent(obj)) {
+                objs.push_back(o->as<T>());
+             }
+        }
+        return objs;
+    }
+
 protected:
     std::vector<Object*> mObjects;
     int mWidth;

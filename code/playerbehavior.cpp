@@ -23,25 +23,26 @@ void PlayerBehavior::update() {
         mLastUpdateTime = time;
 
         Base* base = mPlayer->selectedBase();
+        if(base != nullptr) {
+            Production* prod = base->findAny<Production>();
+            if(prod != nullptr && !prod->isBuilt() && prod->canBuild()) {
+                prod->startBuild();
+            }
+            Mine* mine = base->findAny<Mine>();
+            if(mine != nullptr && !mine->isBuilding() && mine->canBuild()) {
+                mine->startBuild();
+            }
+            if(prod != nullptr && prod->isBuilt() && prod->canBuildUnit()) {
+                prod->buildUnit(Unit::kChar);
+            }
 
-        Production* prod = base->findAny<Production>();
-        if(prod != nullptr && !prod->isBuilt() && prod->canBuild()) {
-            prod->startBuild();
-        }
-        Mine* mine = base->findAny<Mine>();
-        if(mine != nullptr && !mine->isBuilding() && mine->canBuild()) {
-            mine->startBuild();
-        }
-        if(prod != nullptr && prod->isBuilt() && prod->canBuildUnit()) {
-            prod->buildUnit(Unit::kChar);
-        }
-
-        Pylon* pylon = base->findAny<Pylon>();
-        if(pylon != nullptr 
-            && mPlayer->usedSupply() >= mPlayer->supply() - 1
-            && pylon->queuedCount() == 0
-            && pylon->canBuild()) {
-            pylon->startBuild();
+            Pylon* pylon = base->findAny<Pylon>();
+            if(pylon != nullptr 
+                && mPlayer->usedSupply() >= mPlayer->supply() - 1
+                && pylon->queuedCount() == 0
+                && pylon->canBuild()) {
+                pylon->startBuild();
+            }
         }
     }
 }

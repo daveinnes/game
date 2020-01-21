@@ -48,18 +48,39 @@ char TextMatrix::get(int x, int y) const {
 Vector2 TextMatrix::getDimensions(int x, int y) const {
     Vector2 dimensions;
     char startingChar = get(x, y);
+    int width = -1;
     for(int yy = y; yy < getHeight(); ++yy) {
         if(get(x, yy) != startingChar) {
             break;
         }
-        for(int xx = x; xx < getWidth(); ++xx) {
-            char newChar = get(xx, yy);
+
+        bool incrementRow = false;
+        for(int xx = x; xx < getWidth() + 1; ++xx) {
+            if(width > 0) {
+                if(xx - x + 1 > width) {
+                    continue;
+                }
+            }
+            char newChar = ' ';
+            if(xx < mWidth) {
+                newChar = get(xx, yy);
+            }
             if(newChar != startingChar) {
+                if(dimensions.x == xx - x) {
+                    incrementRow = true;
+                }
                 break;
             }
             dimensions.x = std::max(dimensions.xInt(), xx - x + 1);
         }
-        dimensions.y = std::max(dimensions.yInt(), yy - y + 1);
+        if(incrementRow) {
+            dimensions.y = std::max(dimensions.yInt(), yy - y + 1);
+        } else {
+            break;
+        }
+        if(width == -1) {
+            width = dimensions.x;
+        }
     }
     return dimensions;
 }
