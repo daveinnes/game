@@ -3,7 +3,7 @@
 #include "assert.h"
 #include "resource.h"
 #include "tuning.h"
-#include "time.h"
+#include "time_manager.h"
 #include "game.h"
 #include "vector.h"
 

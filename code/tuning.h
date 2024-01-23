@@ -1,7 +1,7 @@
 #ifndef _TUNING_H_
 #define _TUNING_H_
 
-#include <jsoncpp/json/json.h>
+#include <json/json.h>
 
 class Tuning
 {

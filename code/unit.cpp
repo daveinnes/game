@@ -1,11 +1,11 @@
 #include "unit.h"
 
-#include <jsoncpp/json/json.h>
-#include <ncurses.h>
+#include <json/json.h>
+#include <ncurses/ncurses.h>
 
 #include "game.h"
 #include "world.h"
-#include "time.h"
+#include "time_manager.h"
 #include "assert.h"
 #include "player.h"
 #include "unitbehavior.h"

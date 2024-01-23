@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\jsontestrunner_exe.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\jsontestrunner_exe.dir/objects.a @CMakeFiles\jsontestrunner_exe.dir\objects1.rsp
+C:\msys64\ucrt64\bin\c++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\jsontestrunner_exe.dir/objects.a -Wl,--no-whole-archive -o ..\..\bin\jsontestrunner_exe.exe -Wl,--out-implib,..\..\lib\libjsontestrunner_exe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\jsontestrunner_exe.dir\linkLibs.rsp

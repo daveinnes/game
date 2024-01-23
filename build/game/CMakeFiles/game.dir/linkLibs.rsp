@@ -1,0 +1,1 @@
+ C:/Users/david/Documents/code/game/build/install/lib/libjsoncpp.dll.a C:/Users/david/Documents/code/game/build/install/lib/libpdcurses.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

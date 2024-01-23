@@ -1,5 +1,5 @@
 #include "input.h"
-#include <ncurses.h>
+#include <ncurses/ncurses.h>
 
 Input::Input()
 : mInputValue(0) {

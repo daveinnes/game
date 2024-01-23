@@ -1,7 +1,7 @@
 #include "world.h"
 
 #include <cmath>
-#include <jsoncpp/json/json.h>
+#include <json/json.h>
 
 #include "game.h"
 #include "player.h"

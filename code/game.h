@@ -9,7 +9,7 @@ class Render;
 class Player;
 class Gui;
 class Tuning;
-class Time;
+class TimeManager;
 
 class Game
 {
@@ -31,7 +31,7 @@ public:
     Player* player(int index) { return mPlayers[index]; }
     Gui* gui() { return mGui; }
     Tuning* tuning() { return mTuning; }
-    Time* time() { return mTime; }
+    TimeManager* time() { return mTime; }
 
 private:
     Game();
@@ -44,7 +44,7 @@ private:
     std::vector<Player*> mPlayers;
     Gui* mGui;
     Tuning* mTuning;
-    Time* mTime;
+    TimeManager* mTime;
     int mTuningIndex;
 
     bool mRunning;

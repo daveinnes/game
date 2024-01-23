@@ -1,6 +1,6 @@
 #include "player.h"
 
-#include <ncurses.h>
+#include <ncurses/ncurses.h>
 
 #include "game.h"
 #include "tuning.h"

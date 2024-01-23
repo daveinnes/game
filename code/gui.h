@@ -1,7 +1,7 @@
 #ifndef _GUI_H_
 #define _GUI_H_
 
-#include <ncurses.h>
+#include <ncurses/ncurses.h>
 #include "vector.h"
 
 class Gui

@@ -1,5 +1,4 @@
-#include <bits/stdc++.h>
-#include <ncurses.h>
+#include <curses.h>
 
 #include "game.h"
 

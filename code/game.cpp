@@ -1,7 +1,5 @@
 #include "game.h"
 
-#include <ctime>
-
 #include "input.h"
 #include "object.h"
 #include "render.h"
@@ -11,7 +9,7 @@
 #include "player.h"
 #include "gui.h"
 #include "tuning.h"
-#include "time.h"
+#include "time_manager.h"
 #include "textmatrix.h"
 
 static const char* sTuningFiles[] = {"../data/tuning3.json"};
@@ -83,7 +81,7 @@ void Game::init() {
     mWorld = new World(mTuning->get("world"));
     mInput = new Input();
     mRender = new Render(mWorld->getWidth(), mWorld->getHeight(), mTuning->get("render"));
-    mTime = new Time();
+    mTime = new TimeManager();
 
     int guiWidth = mTuning->get("gui")["width"].asInt();
     mGui = new Gui(mWorld->getWidth(), 0, guiWidth, mWorld->getHeight(), playerCount);

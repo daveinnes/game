@@ -2,7 +2,7 @@
 #include "tuning.h"
 #include "player.h"
 #include "game.h"
-#include "time.h"
+#include "time_manager.h"
 #include "base.h"
 #include "production.h"
 #include "pylon.h"

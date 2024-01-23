@@ -1,7 +1,7 @@
 #ifndef NDEBUG
 #include <iostream>
 #include <stdexcept>
-#include <ncurses.h>
+#include <ncurses/ncurses.h>
 #   define ASSERT(condition) ASSERT_MESSAGE((condition), "") 
 #   define ASSERT_MESSAGE(condition, message) \
     do { \

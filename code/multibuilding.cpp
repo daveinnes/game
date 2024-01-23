@@ -2,7 +2,7 @@
 #include "render.h"
 #include "assert.h"
 #include "game.h"
-#include "time.h"
+#include "time_manager.h"
 
 MultiBuilding::MultiBuilding(const Vector2& pos, const Vector2& dimensions, const Json::Value& tuning, char c)
 : Building(pos, dimensions, tuning, c)
